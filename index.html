@@ -22,60 +22,106 @@
         font-family: "Poppins", sans-serif;
       }
 
-      nav{
+      nav {
         display: flex;
         justify-content: space-around;
         align-items: center;
         height: 90px;
-        background-color: rgb(18,18,62);
+        background-color: rgb(18, 18, 62);
       }
 
-      nav ul{
+      nav ul {
         display: flex;
         justify-content: center;
       }
 
-      nav ul li{
+      nav ul li {
         list-style: none;
         margin: 0 23px;
       }
 
-      nav ul li a{
+      nav ul li a {
         text-decoration: none;
         color: white;
       }
 
-      nav ul li a:hover{
+      nav ul li a:hover {
         color: rgb(153, 153, 226);
         font-size: 1.01rem;
       }
 
-      .left{
+      main hr{
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 60px 84px;
+      }
+
+      .left {
         font-size: 1.5rem;
       }
 
-      .firstSection{
+      .firstSection {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: 80px 0;
+        margin: 130px 0;
       }
 
-      .firstSection> div{
+      .firstSection > div {
         width: 30%;
       }
 
-      .leftSection{
+      .leftSection {
         font-size: 2.5rem;
       }
-      .rightSection img{
-       width: 80%;
+      .rightSection img {
+        width: 80%;
       }
-      .purple{
+      .purple {
         color: rgb(170, 107, 228);
       }
-      #element{
+      .text-gray{
+        color: gray;
+      }
+      #element {
         color: rgb(170, 107, 228);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection .box{
+        background-color: white;
+        width: 50vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+      }
+      .secondSection .vertical{
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 120px;
+      }
+      .image-top{
+        width: 27px;
+        position: relative;
+        top: -32px;
+        left: -10px;
+      }
+      .vertical-title{
+        position: relative;
+        top: 75px;
+        width: 150px;
+      }
+      .vertical-desc{
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
       }
     </style>
   </head>
@@ -84,38 +130,75 @@
       <nav>
         <div class="left">Abhishek's Portfolio</div>
         <div class="right">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">About</a></li>
-                <li><a href="/">Services</a></li>
-                <li><a href="/">Projects</a></li>
-                <li><a href="/">Contact Me</a></li>
-            </ul>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
         </div>
       </nav>
     </header>
 
     <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                Hi, My name is <span class="purple">Abhi</span>
-                <div>and I am a Passionate</div>
-                <span id="element"></span>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Abhi</span>
+          <div>and I am a Passionate</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="./img/img.png" alt="image" />
+        </div>
+      </section>
+      <hr />
+
+      <section class="secondSection">
+        <h1>Education</h1>
+        <span class="text-gray">Explore my academic journey and the <br> skills I have acquired through various educational experiences.</span>
+        <div class="box">
+            <div class="vertical">
+                <img src="./img/task-completed.png" alt="image-top" class="image-top">
+                <div class="vertical-title">
+                    10th pass (2020)
+                </div>
+                <div class="vertical-desc">
+                    Successfully completed 10th grade from Savitribai Phule Pune University with aggregate score of 84.60%. This achievement reflects a solid foundation in core subjects.
+                </div>
             </div>
-            <div class="rightSection">
-                <img src="./img/img.png" alt="image">
+            <div class="vertical">
+                <img src="./img/task-completed.png" alt="image-top" class="image-top">
+                <div class="vertical-title">
+                    12th pass (2022)
+                </div>
+                <div class="vertical-desc">
+                    Completed 12th grade in the Science stream from Savitribai Phule Pune University in 2022, achieving a score of 74.60%. This accomplishment demonstrates a strong foundation for advanced studies in scientific and technical fields.
+                </div>
             </div>
-        </section>
+            <div class="vertical">
+                <img src="./img/graduation.png" alt="image-top" class="image-top">
+                <div class="vertical-title">
+                    B.Sc.(Computer Science)
+                </div>
+                <div class="vertical-desc">
+                    After completing 12th grade, I chose to pursue a Bachelor of Science in Computer Science. I have successfully completed two years of the program and am currently in my third year. This course is equipping me with essential skills and knowledge in computer science and technology.
+                </div>
+            </div>
+            
+            </div>
+        </div>
+      </section>
     </main>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <!-- Setup and start animation! -->
-  <script>
-    var typed = new Typed('#element', {
-      strings: ['Web Developer.'],
-      typeSpeed: 50,
-    });
-  </script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Computer Science Student."],
+        typeSpeed: 50,
+      });
+    </script>
   </body>
 </html>

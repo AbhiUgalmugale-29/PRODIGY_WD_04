@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 90px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.01rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .firstSection {
+            max-width: 80vw;
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            margin-top: 50px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .firstSection .box {
+            background-color: white;
+            width: 69vw;
+            height: 2px;
+            display: block;
+            margin: auto;
+            display: flex;
+        }
+
+        .firstSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 170px;
+        }
+
+        .image-top {
+            width: 30px;
+            position: relative;
+            top: -32px;
+            left: -12px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            right: 50px;
+            width: 180px;
+            font-size: 18px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            right: 50px;
+            color: gray;
+            width: 150px;
+            font-size: 12px;
+        }
+
+        .btn {
+            position: relative;
+            top: 100px;
+            right: 65px;
+            padding: 5px;
+            width: 150px;
+            background-color: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+
+        .btn:hover {
+            background-color: #14177f;
+        }
+
+        .btn:active {
+            font-size: 14px;
+            transform: scale(0.98);
+            background-color: #14177f;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Abhishek's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="../index.html#education">Education</a></li>
+                    <li><a href="./skills.html">Skills</a></li>
+                    <li><a href="">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Skills</h1>
+        <p class="text-gray">Explore my technical skills and expertise.</p>
+        <section class="firstSection">
+            <div class="box">
+                <div class="vertical">
+                    <img src="../img/c.png" alt="image-top" class="image-top">
+                    <div class="vertical-title">
+                        C Programming
+                    </div>
+                    <div class="vertical-desc">
+                        Proficient in C programming, with experience in developing algorithms and solving complex
+                        problems.
+                    </div>
+                    
+                </div>
+                <div class="vertical">
+                    <img src="../img/website-structure.png" alt="image-top" class="image-top">
+                    <div class="vertical-title">
+                        Data Structures & Algorithms
+                    </div>
+                    <div class="vertical-desc">
+                        Skilled in data structures and algorithms using C language, with a strong understanding of
+                        computational complexity.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="../img/world-wide-web.png" alt="image-top" class="image-top">
+                    <div class="vertical-title">
+                        Full Stack Web Development using python
+                    </div>
+                    <div class="vertical-desc">
+                        Experienced in full stack web development using Python, including both frontend and backend
+                        technologies.
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>

@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Abhishek Laxman Ugalmugale</title>
+  <title>Contact - Abhi's Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -51,19 +51,73 @@
       font-size: 1.01rem;
     }
 
-    .container {
-      max-width: 80vw;
-      margin: 60px auto;
-      padding: 0 20px;
+    main {
+      margin: 20px;
     }
 
-    .container h1 {
-      margin-bottom: 10px;
+    .contact-header {
+      text-align: center;
+      margin-bottom: 40px;
     }
 
-    .about-content {
+    .contact-header h1 {
+      font-size: 2.5rem;
+      color: rgb(170, 107, 228);
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .contact-info p {
       font-size: 1.2rem;
-      line-height: 1.6;
+      color: white;
+      margin: 10px 0;
+    }
+
+    .contact-info a {
+      color: rgb(170, 107, 228);
+      text-decoration: none;
+    }
+
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: auto;
+      background-color: rgb(18, 18, 62);
+      padding: 40px 50px;
+      border-radius: 10px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid rgb(170, 107, 228);
+      border-radius: 5px;
+      background-color: rgb(0, 0, 33);
+      color: white;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 10px;
+      background-color: rgb(170, 107, 228);
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .contact-form button:hover {
+      background-color: rgb(153, 153, 226);
     }
 
     .footer {
@@ -71,7 +125,7 @@
       display: flex;
       justify-content: space-evenly;
       padding: 23px 122px;
-      margin-top: 120px;
+      margin-top: 100px;
     }
 
     .footer ul {
@@ -87,7 +141,7 @@
       color: white;
     }
 
-    .footer > div {
+    .footer>div {
       width: 223px;
     }
 
@@ -96,15 +150,13 @@
       color: gray;
       padding: 12px 0;
     }
-
-    .footer-third ul {
+    .footer-third ul{
       margin-top: 30px;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
     }
-
-    .footer-third ul li {
+    .footer-third ul li{
       font-size: 25px;
     }
   </style>
@@ -127,24 +179,31 @@
   </header>
 
   <main>
-    <div class="container">
-      <h1>About Me</h1>
-      <div class="about-content">
-        <p><strong>Name:</strong> Abhishek Laxman Ugalmugale</p>
-        <p><strong>Age:</strong> 20 years</p>
-        <p><strong>Location:</strong> Ahilyanagar, Maharashtra</p>
-        <br>
-        <p>
-          Hi, I'm Abhishek, a passionate Computer Science student with a keen interest in technology and software development. I am currently pursuing my Bachelor of Science in Computer Science and have completed two years of my program. I enjoy learning new technologies and working on exciting projects.
-        </p>
-      </div>
-    </div>
+    <section class="contact-header">
+      <h1>Contact Me</h1>
+    </section>
+
+    <section class="contact-info">
+      <p>Email: <a href="mailto:ugalmugaleabhishek2@gmail.com">ugalmugaleabhishek2@gmail.com</a></p>
+      <p>Mobile: <a href="tel:+918459191729">+91 84591 91729</a></p>
+      <p>Feel free to reach out if you have any questions or just want to say hello!</p>
+    </section>
+
+    <section class="contact-form">
+      <form action="https://formspree.io/f/mgvwljyp" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <input type="tel" name="phone" placeholder="Your Phone Number" />
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
   </main>
 
   <footer>
     <div class="footer">
       <div class="footer-first">
-        <h3>Abhishek's Personal Portfolio</h3>
+        <h3>Abhishek's Personal portfolio</h3>
       </div>
       <div class="footer-second">
         <ul>
@@ -160,7 +219,7 @@
             <a href="https://github.com/AbhiUgalmugale-29"><i class="fab fa-github"></i></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/abhishek-ugalmugale-32b260320"><i class="fab fa-linkedin"></i></a>
+            <a href="www.linkedin.com/in/abhishek-ugalmugale-32b260320"><i class="fab fa-linkedin"></i></a>
           </li>
           <li>
             <a href="tel:+918459191729"><i class="fab fa-whatsapp"></i></a>

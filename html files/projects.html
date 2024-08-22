@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 90px;
+        background-color: rgb(18, 18, 62);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: rgb(153, 153, 226);
+        font-size: 1.01rem;
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+
+      .projects {
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .projects h2 {
+        text-align: center;
+        margin: 10px 0 30px 0;
+        font-size: 2rem;
+        color: white;
+      }
+
+      .project-item {
+        margin-bottom: 40px;
+        display: flex;
+        border: 1px solid #333;
+        border-radius: 8px;
+      }
+
+      .project-item img {
+        object-fit: cover;
+        max-width: 420px;
+        height: auto;
+        border-radius: 8px;
+        margin: 10px;
+      }
+
+      .project-details {
+        flex: 1;
+        padding: 20px;
+        background-color: #333;
+        border-radius: 8px;
+        margin: 10px;
+      }
+
+      .project-details h3 {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+      }
+
+      .project-details p {
+        font-size: 1.1rem;
+        color: #ddd;
+        margin-bottom: 20px;
+      }
+
+      .project-buttons {
+        display: flex;
+        gap: 10px;
+      }
+
+      .project-buttons a {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: white;
+        text-decoration: none;
+        background-color: rgb(153, 153, 226);
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .project-buttons a:hover {
+        background-color: rgb(100, 100, 200);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Abhishek's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./index.html#education">Education</a></li>
+            <li><a href="./skills.html">Skills</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="projects">
+        <h2>Projects</h2>
+        <div class="project-item">
+          <img src="../screenshot/1.png" alt="Coffee Shop Website Screenshot" />
+          <div class="project-details">
+            <h3>Business Website (Coffee Shop)</h3>
+            <p>
+              A business website for a coffee shop created using HTML and CSS.
+              This project showcases a professional layout and design suited for
+              a coffee shop.
+            </p>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/AbhiUgalmugale-29/business-webpage-using-html-css.git"
+                target="_blank"
+                >View on GitHub</a
+              >
+              <a
+                href="https://coffeeshopwebsitedesign.netlify.app"
+                target="_blank"
+                >View Live</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-item">
+          <img
+            src="../screenshot/2.png"
+            alt="Food Business Website Screenshot"
+          />
+          <div class="project-details">
+            <h3>Food Related Business Website</h3>
+            <p>
+              A food-related business website developed using HTML and CSS. The
+              design focuses on providing a clean and appealing interface for
+              food-related businesses.
+            </p>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/AbhiUgalmugale-29/Food-Related-Business-Website-Using-Html-Css.git"
+                target="_blank"
+                >View on GitHub</a
+              >
+              <a href="https://pizzapalacewebsite.netlify.app" target="_blank"
+                >View Live</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="../screenshot/3.png" alt="Calculator Design Screenshot" />
+          <div class="project-details">
+            <h3>Calculator Design</h3>
+            <p>
+              A simple calculator design using HTML and CSS. This project
+              demonstrates the ability to create functional and visually
+              appealing web components.
+            </p>
+            <div class="project-buttons">
+              <a
+                href="https://github.com/AbhiUgalmugale-29/Calculator-Design-Using-Html-Css.git"
+                target="_blank"
+                >View on GitHub</a
+              >
+              <a href="https://calculatordesigning.netlify.app" target="_blank"
+                >View Live</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

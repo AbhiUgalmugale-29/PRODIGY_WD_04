@@ -4,13 +4,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Abhishek Laxman Ugalmugale</title>
+  <title>About</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <style>
     * {
       margin: 0;
@@ -63,6 +62,7 @@
 
     .container h1 {
       margin-bottom: 10px;
+      color: rgb(153, 153, 226); /* Add color to the heading */
     }
 
     .about-content {
@@ -70,46 +70,23 @@
       line-height: 1.6;
     }
 
-    .footer {
-      background-color: rgb(18, 18, 62);
-      display: flex;
-      justify-content: space-evenly;
-      padding: 23px 122px;
-      margin-top: 120px;
+    .about-content h2 {
+      margin-top: 20px;
+      color: rgb(153, 153, 226); /* Add color to the subheadings */
     }
 
-    .footer ul {
+    .about-content p {
+      margin-bottom: 20px;
+      color: white; /* Ensure text is readable against background */
+    }
+
+    .skills-list, .projects-list, .data-structure-list, .dbms-list, .rdbms-list {
       list-style: none;
+      padding-left: 0;
     }
 
-    .footer a {
-      text-decoration: none;
-      color: white;
-    }
-
-    .fab {
-      color: white;
-    }
-
-    .footer > div {
-      width: 223px;
-    }
-
-    footer .footer-rights {
-      text-align: center;
-      color: gray;
-      padding: 12px 0;
-    }
-
-    .footer-third ul {
-      margin-top: 30px;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly;
-    }
-
-    .footer-third ul li {
-      font-size: 25px;
+    .skills-list li, .projects-list li, .data-structure-list li, .dbms-list li, .rdbms-list li {
+      margin-bottom: 10px;
     }
   </style>
 </head>
@@ -124,6 +101,7 @@
           <li><a href="./about.html">About</a></li>
           <li><a href="../index.html#education">Education</a></li>
           <li><a href="./skills.html">Skills</a></li>
+          <li><a href="./projects.html">Projects</a></li>
           <li><a href="./contact.html">Contact Me</a></li>
         </ul>
       </div>
@@ -141,39 +119,53 @@
         <p>
           Hi, I'm Abhishek, a Computer Science student with a keen interest in technology and software development. I am currently pursuing my Bachelor of Science in Computer Science and have completed two years of my program. I enjoy learning new technologies and working on exciting projects.
         </p>
+        <h2>Academic Background</h2>
+        <p>
+          I have completed my 10th and 12th grades with strong academic performance, which laid a solid foundation for my pursuit of a degree in Computer Science. My education has equipped me with essential knowledge in programming, algorithms, and data structures.
+        </p>
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>Programming Languages: Python, Java, C</li>
+          <li>Web Technologies: HTML, CSS, JavaScript</li>
+          <li>Frameworks: React, Django</li>
+        </ul>
+        <h2>Data Structures</h2>
+        <ul class="data-structure-list">
+          <li>Arrays</li>
+          <li>Linked Lists</li>
+          <li>Stacks</li>
+          <li>Queues</li>
+          <li>Trees</li>
+          <li>Graphs</li>
+          <li>Hash Tables</li>
+        </ul>
+        <h2>DBMS</h2>
+        <ul class="dbms-list">
+          <li>Concepts: Database Design, Normalization, SQL</li>
+          <li>Tools: MySQL, PostgreSQL</li>
+        </ul>
+        <h2>RDBMS</h2>
+        <ul class="rdbms-list">
+          <li>Concepts: Relational Model, Joins, Indexing</li>
+          <li>Tools: MySQL, PostgreSQL</li>
+        </ul>
+        <h2>Projects</h2>
+        <ul class="projects-list">
+          <li><strong>Business Website (Coffee Shop):</strong> A responsive website for a coffee shop created using HTML and CSS.</li>
+          <li><strong>Food Related Business Website:</strong> A website for food-related businesses developed using HTML and CSS.</li>
+          <li><strong>Calculator Design:</strong> A simple calculator design using HTML and CSS, demonstrating functional and visual design skills.</li>
+        </ul>
+        <h2>Hobbies</h2>
+        <p>
+          Outside of my academic and professional interests, I enjoy watching web series in my free time. It helps me relax and stay entertained while also allowing me to explore diverse storytelling and creative narratives.
+        </p>
+        <h2>Career Goals</h2>
+        <p>
+          My goal is to work as a software developer, specializing in web development and machine learning. I am passionate about creating innovative solutions and contributing to impactful projects.
+        </p>
       </div>
     </div>
   </main>
-
-  <footer>
-    <div class="footer">
-      <div class="footer-first">
-        <h3>Abhishek's Personal Portfolio</h3>
-      </div>
-      <div class="footer-second">
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./skills.html">Skills</a></li>
-          <li><a href="./contact.html">Contact Me</a></li>
-        </ul>
-      </div>
-      <div class="footer-third">
-        <ul>
-          <li>
-            <a href="https://github.com/AbhiUgalmugale-29"><i class="fab fa-github"></i></a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/abhishek-ugalmugale-32b260320"><i class="fab fa-linkedin"></i></a>
-          </li>
-          <li>
-            <a href="tel:+918459191729"><i class="fab fa-whatsapp"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-rights">&copy; 2024 Abhishek's Portfolio. | All rights reserved.</div>
-  </footer>
 </body>
 
 </html>

@@ -16,5 +16,5 @@ Welcome to my personal portfolio! This site showcases my skills, educational bac
 
 ## Screenshot
 
-![Portfolio Screenshot](./screenshot/Screenshot%20(310).png)
+![Portfolio Screenshot](./screenshot/Screenshot%20(314).png)
 
